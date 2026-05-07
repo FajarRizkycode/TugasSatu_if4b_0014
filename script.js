@@ -25,6 +25,7 @@ btnTambah.addEventListener("click", function(){
     daftartugas.appendChild(listbaru);
 
     inputValue.value = "";
+    tanggalTask.value = "";
     inputValue.focus();
 
 
