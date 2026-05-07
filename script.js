@@ -20,6 +20,7 @@ btnTambah.addEventListener("click", function(){
     tanggal.innerHTML = "Tanggal"+tanggal;
 
     listbaru.appendChild(span);
+    listbaru.appendChild(tanggal);
     
     daftartugas.appendChild(listbaru);
 
