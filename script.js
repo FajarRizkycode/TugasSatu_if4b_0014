@@ -8,6 +8,7 @@ btnTambah.addEventListener("click", function(){
        tanggalTask.value === ""
     ){
         alert("Input tidak boleh kosong");
+        alert("Tanggal tidak boleh kosong");
         return;
     }
 
