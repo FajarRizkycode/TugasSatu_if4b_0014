@@ -17,8 +17,10 @@ btnTambah.addEventListener("click", function(){
     span.innerHTML = inputValue.value;
 
     const tanggal = document.getElementById("tanggaTask").value;
+    tanggal.innerHTML = "Tanggal"+tanggal;
 
     listbaru.appendChild(span);
+    
     daftartugas.appendChild(listbaru);
 
     inputValue.value = "";
