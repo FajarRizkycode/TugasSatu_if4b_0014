@@ -73,11 +73,17 @@ btnTambah.addEventListener("click", function(){
     });
 
 
-    daftartugas.appendChild(listbaru);
+   
     
     listbaru.appendChild(span);
     listbaru.appendChild(tanggal);
+    listbaru.appendChild(status);
     listbaru.appendChild(btnEdit);
+    listbaru.appendChild(btnStatus);
+    listbaru.appendChild(btnHapus);
+
+
+    daftartugas.appendChild(listbaru);
 
 
     inputValue.value = "";
