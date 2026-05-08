@@ -29,14 +29,11 @@ btnTambah.addEventListener("click", function(){
     const status = document.createElement("p")
     status.innerHTML = "Status: Progress";
 
-    listbaru.appendChild(span);
-    listbaru.appendChild(tanggal);
-
     const btnEdit = document.createElement("button");
     btnEdit.innerHTML = "Edit";
     btnEdit.classList.add("edit");
 
-    listbaru.appendChild(btnEdit);
+  
 
     btnEdit.addEventListener("click", function(){
 
@@ -51,7 +48,29 @@ btnTambah.addEventListener("click", function(){
 
     });
 
+    const btnStatus = document.createElement("button");
+    btnStatus.innerHTML = "Done";
+    btnStatus.classList.add("status");
+
+    btnStatus.addEventListener("click", function(){
+
+        if(status.innerHTML === "Status: Progress"){
+            status.innerHTML = "Status: Done";
+            span.classList.add("done");
+        } else {
+            status.innerHTML = "Status: Progress";
+            span.classList.remove("done");
+        }
+
+    });
+
+
     daftartugas.appendChild(listbaru);
+    
+    listbaru.appendChild(span);
+    listbaru.appendChild(tanggal);
+    listbaru.appendChild(btnEdit);
+
 
     inputValue.value = "";
     tanggalTask.value = "";
