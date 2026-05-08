@@ -37,6 +37,10 @@ h1{
 }
 input{
     flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
 }
 
 h3{
