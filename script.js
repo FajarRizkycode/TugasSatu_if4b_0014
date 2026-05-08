@@ -28,6 +28,9 @@ btnTambah.addEventListener("click", function(){
     tanggalTask.value = "";
     inputValue.focus();
 
+    const btnEdit = document.createElement("button");
+    btnEdit.innerHTML = "Edit";
+
 
 
 
