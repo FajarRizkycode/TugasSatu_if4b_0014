@@ -40,3 +40,7 @@ li{
     border-radius: 8px;
     list-style: none;
 }
+
+.edit{
+    background-color: orange;
+}
