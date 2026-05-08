@@ -43,6 +43,11 @@ input{
     transition: 0.3s;
 }
 
+input:focus{
+    border-color: lightskyblue;
+    outline: none;
+}
+
 h3{
     text-align: center;
     color: white;
