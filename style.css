@@ -7,8 +7,8 @@
 
 /* BODY */
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #a7d8ff, #ffd6e7);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -17,18 +17,19 @@ body{
 
 /* CARD */
 .card{
-    background: lightcoral;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
     padding: 25px;
-    border-radius: 15px;
+    border-radius: 20px;
     width: 500px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 /* TITLE */
 h1{
     text-align: center;
     margin-bottom: 20px;
-    color: lightgoldenrodyellow;
+    color: #5a7ca8;
 }
 
 /* FORM */
@@ -41,41 +42,31 @@ h1{
 input{
     flex: 1;
     padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    transition: 0.3s;
-}
-
-input:focus{
-    border-color: #4facfe;
-    outline: none;
+    border-radius: 10px;
+    border: none;
+    background: #f0f8ff;
 }
 
 /* BUTTON TAMBAH */
 #btnTambahTodo{
-    background: lightpink;
+    background: #ff9ecb;
     color: white;
     border: none;
-    padding: 10px 15px;
-    border-radius: 8px;
+    padding: 10px;
+    border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 #btnTambahTodo:hover{
-    background: #3a8de0;
+    background: #ff7eb8;
 }
 
 /* LIST */
-ul{
-    margin-top: 10px;
-}
-
-/* ITEM */
 li{
-    background: #f9f9f9;
+    background: #ffffffcc;
     padding: 12px;
-    border-radius: 10px;
+    border-radius: 15px;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
@@ -95,12 +86,28 @@ li{
     }
 }
 
+/* TEXT */
+span{
+    font-weight: bold;
+    color: #4a6fa5;
+}
+
+small{
+    color: #888;
+}
+
+/* STATUS */
+p{
+    font-size: 12px;
+    color: #777;
+}
+
 /* BUTTON DALAM LIST */
 li button{
     margin-top: 5px;
     margin-right: 5px;
     padding: 6px 10px;
-    border-radius: 6px;
+    border-radius: 8px;
     border: none;
     cursor: pointer;
     font-size: 12px;
@@ -108,30 +115,24 @@ li button{
 
 /* EDIT */
 .edit{
-    background: orange;
-    color: white;
+    background: #a7d8ff;
+    color: #2c4d7a;
 }
 
 /* STATUS */
 .status{
-    background: purple;
+    background: #d9b3ff;
     color: white;
 }
 
 /* HAPUS */
 .hapus{
-    background: red;
+    background: #ff8fa3;
     color: white;
 }
 
 /* DONE STYLE */
 .done{
     text-decoration: line-through;
-    color: gray;
-}
-
-/* STATUS TEXT */
-p{
-    font-size: 12px;
-    color: #555;
+    color: #aaa;
 }
