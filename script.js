@@ -33,6 +33,22 @@ btnTambah.addEventListener("click", function(){
 
     listbaru.appendChild("butnEdit");
 
+    btnEdit.addEventListener("click", function(){
+
+    const editTask = prompt(
+        "Edit tugas:",
+        span.innerHTML
+    );
+
+    if(
+        editTask !== null &&
+        editTask !== ""
+    ){
+        span.innerHTML = editTask;
+    }
+
+});
+
 
 
 
