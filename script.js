@@ -6,12 +6,16 @@ const daftartugas = document.getElementById("daftartugas");
 btnTambah.addEventListener("click", function(){
 
     if(
-        inputValue.value === "" ||
-        tanggalTask.value === ""
-    ){
+        inputValue.value === "" ){
         alert("Input dan tanggal tidak boleh kosong");
         return;
     }
+
+    if(tanggalTask.value===""){
+        alert("Tanggal tidak boleh kosong")
+    }
+
+
 
     const listbaru = document.createElement("li");
 
