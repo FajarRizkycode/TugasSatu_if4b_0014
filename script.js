@@ -13,6 +13,7 @@ btnTambah.addEventListener("click", function(){
 
     if(tanggalTask.value===""){
         alert("Tanggal tidak boleh kosong")
+        return;
     }
 
 
@@ -24,6 +25,9 @@ btnTambah.addEventListener("click", function(){
 
     const tanggal = document.createElement("small");
     tanggal.innerHTML = "Tanggal: " + tanggalTask.value;
+
+    const status = document.createElement("p")
+    status.innerHTML = "Status: Progress";
 
     listbaru.appendChild(span);
     listbaru.appendChild(tanggal);
@@ -54,3 +58,4 @@ btnTambah.addEventListener("click", function(){
     inputValue.focus();
 
 });
+
