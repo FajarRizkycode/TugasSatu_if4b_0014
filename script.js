@@ -49,6 +49,8 @@ btnTambah.addEventListener("click", function(){
 
 });
 
+btnEdit.classList.add("edit");
+
 
 
 
