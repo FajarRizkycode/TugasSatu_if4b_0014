@@ -171,3 +171,109 @@ h3::after{
     margin: 5px auto;
     border-radius: 10px;
 }
+/* CONTAINER AWAN */
+.clouds{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* BENTUK DASAR AWAN */
+.cloud{
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+/* bikin bentuk awan dari lingkaran */
+.cloud::before,
+.cloud::after{
+    content: "";
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+}
+
+/* AWAN 1 */
+.x1{
+    width: 120px;
+    height: 60px;
+    top: 20%;
+    left: -150px;
+    animation: moveCloud 40s linear infinite;
+}
+
+.x1::before{
+    width: 70px;
+    height: 70px;
+    top: -30px;
+    left: 10px;
+}
+
+.x1::after{
+    width: 90px;
+    height: 90px;
+    top: -40px;
+    right: 10px;
+}
+
+/* AWAN 2 */
+.x2{
+    width: 150px;
+    height: 70px;
+    top: 50%;
+    left: -200px;
+    animation: moveCloud 60s linear infinite;
+}
+
+.x2::before{
+    width: 80px;
+    height: 80px;
+    top: -30px;
+    left: 20px;
+}
+
+.x2::after{
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    right: 20px;
+}
+
+/* AWAN 3 */
+.x3{
+    width: 100px;
+    height: 50px;
+    top: 75%;
+    left: -150px;
+    animation: moveCloud 50s linear infinite;
+}
+
+.x3::before{
+    width: 60px;
+    height: 60px;
+    top: -25px;
+    left: 15px;
+}
+
+.x3::after{
+    width: 80px;
+    height: 80px;
+    top: -40px;
+    right: 10px;
+}
+
+/* ANIMASI GERAK */
+@keyframes moveCloud{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(120vw);
+    }
+}
