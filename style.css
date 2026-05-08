@@ -48,3 +48,10 @@ li{
 .status{
     background-color: lightpink;
 }
+.hapus{
+    background-color: red;
+}
+.done{
+    text-decoration: line-through;
+    color: gray;
+}
