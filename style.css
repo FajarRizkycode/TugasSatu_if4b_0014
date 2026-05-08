@@ -48,16 +48,22 @@ input:focus{
     outline: none;
 }
 
+
+
 h3{
     text-align: center;
     color: white;
 
 }
 
-button{
-    background-color: green;
+#btnTambahTodo{
+    background: #4facfe;
     color: white;
     border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 li{
