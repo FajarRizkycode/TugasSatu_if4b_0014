@@ -64,6 +64,14 @@ btnTambah.addEventListener("click", function(){
 
     });
 
+    const btnHapus = document.createElement("button");
+    btnHapus.innerHTML = "Hapus";
+    btnHapus.classList.add("hapus");
+
+    btnHapus.addEventListener("click", function(){
+        listbaru.remove();
+    });
+
 
     daftartugas.appendChild(listbaru);
     
