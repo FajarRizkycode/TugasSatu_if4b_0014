@@ -49,7 +49,7 @@ function renderTodo(){
 
         // EDIT
         const btnEdit = document.createElement("button");
-        btnEdit.innerHTML = "Edit";
+        btnEdit.innerHTML = "✏️ Edit";
         btnEdit.classList.add("edit");
 
         btnEdit.addEventListener("click", function(){
@@ -64,7 +64,7 @@ function renderTodo(){
 
         // STATUS
         const btnStatus = document.createElement("button");
-        btnStatus.innerHTML = "Done";
+        btnStatus.innerHTML = "✅ Done";
         btnStatus.classList.add("status");
 
         btnStatus.addEventListener("click", function(){
@@ -75,7 +75,7 @@ function renderTodo(){
 
         // HAPUS
         const btnHapus = document.createElement("button");
-        btnHapus.innerHTML = "Hapus";
+        btnHapus.innerHTML = "🗑️ Hapus";
         btnHapus.classList.add("hapus");
 
         btnHapus.addEventListener("click", function(){
@@ -140,7 +140,9 @@ for(let i = 0; i < 100; i++){
     starsContainer.appendChild(star);
 }
 
+// =====================
 // SHOOTING STAR
+// =====================
 function createShootingStar(){
     let star = document.createElement("div");
     star.classList.add("shooting-star");
@@ -154,6 +156,17 @@ function createShootingStar(){
 }
 
 setInterval(createShootingStar, 3000);
+
+// =====================
+// SERVICE WORKER (OFFLINE MODE)
+// =====================
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("service-worker.js")
+        .then(() => console.log("Offline mode aktif 💙"))
+        .catch(err => console.log("Gagal:", err));
+    });
+}
 
 // =====================
 // LOAD AWAL
