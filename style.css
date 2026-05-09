@@ -277,3 +277,68 @@ h3::after{
         transform: translateX(120vw);
     }
 }
+/* tambahan efek biar dreamy */
+.cloud{
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.7;
+    filter: blur(1px);
+}
+
+/* variasi opacity (depth) */
+.x1{ opacity: 0.8; }
+.x2{ opacity: 0.6; }
+.x3{ opacity: 0.7; }
+.x4{ opacity: 0.5; }
+.x5{ opacity: 0.75; }
+.x6{ opacity: 0.55; }
+.x7{ opacity: 0.65; }
+.x8{ opacity: 0.5; }
+
+/* ukuran & posisi beda-beda */
+
+/* AWAN 4 */
+.x4{
+    width: 180px;
+    height: 80px;
+    top: 10%;
+    left: -250px;
+    animation: moveCloud 70s linear infinite;
+}
+
+/* AWAN 5 */
+.x5{
+    width: 90px;
+    height: 40px;
+    top: 35%;
+    left: -150px;
+    animation: moveCloud 45s linear infinite;
+}
+
+/* AWAN 6 */
+.x6{
+    width: 200px;
+    height: 90px;
+    top: 65%;
+    left: -300px;
+    animation: moveCloud 80s linear infinite;
+}
+
+/* AWAN 7 */
+.x7{
+    width: 130px;
+    height: 60px;
+    top: 80%;
+    left: -200px;
+    animation: moveCloud 55s linear infinite;
+}
+
+/* AWAN 8 */
+.x8{
+    width: 160px;
+    height: 70px;
+    top: 25%;
+    left: -250px;
+    animation: moveCloud 65s linear infinite;
+}
