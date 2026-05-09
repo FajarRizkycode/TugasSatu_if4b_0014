@@ -343,3 +343,73 @@ h3::after{
     left: -250px;
     animation: moveCloud 65s linear infinite;
 }
+/* NIGHT MODE BODY */
+body.night{
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* CARD MALAM */
+body.night .card{
+    background: rgba(20, 30, 50, 0.8);
+    color: #eee;
+}
+
+/* BUTTON MODE */
+#toggleMode{
+    margin-bottom: 10px;
+    background: #4dabf7;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* BINTANG CONTAINER */
+.stars{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* BINTANG */
+.star{
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    opacity: 0.8;
+    border-radius: 50%;
+    animation: twinkle 2s infinite alternate;
+}
+
+/* efek kedip */
+@keyframes twinkle{
+    from{ opacity: 0.3; }
+    to{ opacity: 1; }
+}
+
+/* SHOOTING STAR */
+.shooting-star{
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: white;
+    box-shadow: 0 0 10px white;
+    border-radius: 50%;
+    animation: shoot 5s linear infinite;
+}
+
+/* animasi jatuh */
+@keyframes shoot{
+    0%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(300px, 300px);
+        opacity: 0;
+    }
+}

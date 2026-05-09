@@ -3,42 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo List Ghibli</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- FONT -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-    
 
+    <!-- ☁️ AWAN -->
+    <div class="clouds">
+        <div class="cloud x1"></div>
+        <div class="cloud x2"></div>
+        <div class="cloud x3"></div>
+        <div class="cloud x4"></div>
+        <div class="cloud x5"></div>
+        <div class="cloud x6"></div>
+        <div class="cloud x7"></div>
+        <div class="cloud x8"></div>
+    </div>
 
-   <div class="card">
-    <h1>Todo List</h1>
+    <!-- ⭐ BINTANG -->
+    <div class="stars"></div>
 
-     <div  id="formtodo">
-        <input type="text" type="text" id="inputTask" placeholder="Masukkan Tugas">
-        <input type="date" id ="tanggalTask">
-        <button id="btnTambahTodo" type="submit">Tambah</button>
+    <!-- CARD -->
+    <div class="card">
 
+        <button id="toggleMode">🌙 Mode Malam</button>
+
+        <h1>Todo List</h1>
+
+        <div id="formtodo">
+            <input type="text" id="inputTask" placeholder="Masukkan Tugas">
+            <input type="date" id="tanggalTask">
+            <button id="btnTambahTodo">Tambah</button>
         </div>
-        
 
-        <h3>Daftar Tugas:</h3>
+        <h3>Daftar Tugas</h3>
 
         <ul id="daftartugas"></ul>
-   </div>
 
-<div class="clouds">
-    <div class="cloud x1"></div>
-    <div class="cloud x2"></div>
-    <div class="cloud x3"></div>
-    <div class="cloud x4"></div>
-    <div class="cloud x5"></div>
-    <div class="cloud x6"></div>
-    <div class="cloud x7"></div>
-    <div class="cloud x8"></div>
-</div>
-   <script src="script.js"></script>
+    </div>
 
+    <script src="script.js"></script>
 
 </body>
 </html>
